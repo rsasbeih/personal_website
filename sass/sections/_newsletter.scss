@@ -1,0 +1,94 @@
+@import "../utils/vars.scss";
+@import "../utils/mixins.scss";
+@import "../utils/breakpoints";
+.newsletter {
+  margin-left: 0;
+  margin-top: 50px;
+  text-align: center;
+  .social__text {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-left: 0;
+    margin-top: 50px;
+    text-align: center;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 90px;
+    margin-top: 0;
+    text-align: left;
+  }
+}
+.newsletter__container {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  @media screen and (min-width: $tablet) {
+    margin-top: 20px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-top: 0;
+  }
+}
+.newsletter__form {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: $tablet) {
+    flex-direction: column;
+  }
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+  }
+}
+
+.newsletter__button {
+  background-color: $primary-color;
+  width: 200px;
+  padding: 10px 40px;
+  color: $secondary-color;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 30px;
+  font-size: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  letter-spacing: 0.06em;
+  transition: 250ms;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: $button-hover-color;
+  }
+}
+
+.newsletter__input {
+  background-color: $footer-color;
+  color: $secondary-color;
+  @include bordered($subscribe-color);
+  border-radius: 4px;
+  width: 347px;
+  height: 50px;
+  margin-right: 12px;
+  padding-left: 10px;
+  transition: 250ms;
+  transition-property: border-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    outline: none;
+    border-color: $secondary-color;
+  }
+}
+
+.newsletter__button {
+  svg {
+    fill: currentColor;
+  }
+}

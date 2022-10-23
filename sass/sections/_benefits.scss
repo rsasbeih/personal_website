@@ -1,0 +1,71 @@
+@import "../utils/vars.scss";
+@import "../utils/breakpoints";
+
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-gap: 30px;
+}
+.benefits__item {
+  @media screen and (min-width: $desktop) {
+    width: 450px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 354px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+  }
+}
+
+.benefits__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  font-family: "Roboto";
+  font-style: normal;
+  text-transform: uppercase;
+  text-align: center;
+  @media screen and (min-width: $tablet) {
+    &:not(:last-child) {
+      text-align: left;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    &:not(:last-child) {
+      text-align: left;
+    }
+  }
+}
+.benefits__image {
+  display: flex;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+  background-color: $background-color;
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 354px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+  }
+  svg {
+    align-items: center;
+  }
+}
+
+.benefits__description {
+  color: $text-color;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  font-family: "Roboto";
+}

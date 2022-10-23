@@ -1,0 +1,80 @@
+@import "../utils/vars.scss";
+@import "../utils/breakpoints";
+
+.footer {
+  background-color: $footer-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__list {
+  font-style: normal;
+  li:not(:last-child) {
+    margin-bottom: 10px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 10px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 5px;
+    }
+  }
+}
+.footer__address {
+  color: $footer-text-color;
+  text-decoration: none;
+  transition: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    color: $secondary-color;
+  }
+}
+
+.footer__email {
+  color: $footer-text-color;
+  text-decoration: none;
+  transition: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    color: $secondary-color;
+  }
+}
+
+.footer__info {
+  color: $footer-text-color;
+  transition: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    color: $secondary-color;
+  }
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    text-align: center;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: center;
+  }
+}
+.footer__logo {
+  color: $primary-color;
+  font-family: "Raleway";
+  font-size: 24px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 10px;
+}

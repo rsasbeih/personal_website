@@ -1,0 +1,10 @@
+@import "../utils/breakpoints";
+.section {
+  padding: 15px 0;
+  @media screen and (min-width: $tablet) {
+    padding: 60px 0;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 94px 0;
+  }
+}
