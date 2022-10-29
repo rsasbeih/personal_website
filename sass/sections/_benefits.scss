@@ -29,16 +29,16 @@
   font-style: normal;
   text-transform: uppercase;
   text-align: center;
-  @media screen and (min-width: $tablet) {
-    &:not(:last-child) {
-      text-align: left;
-    }
-  }
-  @media screen and (min-width: $desktop) {
-    &:not(:last-child) {
-      text-align: left;
-    }
-  }
+  // @media screen and (min-width: $tablet) {
+  //   &:not(:last-child) {
+  //     text-align: left;
+  //   }
+  // }
+  // @media screen and (min-width: $desktop) {
+  //   &:not(:last-child) {
+  //     text-align: left;
+  //   }
+  // }
 }
 .benefits__image {
   display: flex;

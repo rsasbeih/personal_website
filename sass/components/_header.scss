@@ -94,7 +94,7 @@ header {
 }
 
 .nav__logo {
-  color: $primary-color;
+  color: $secondary-color;
   font-family: "Raleway";
   font-size: 24px;
   font-weight: 700;
@@ -129,7 +129,7 @@ header {
   }
 }
 .current {
-  color: $button-hover-color;
+  color: $secondary-color;
   position: relative;
 }
 .current::after {
