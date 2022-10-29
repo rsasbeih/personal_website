@@ -105,6 +105,10 @@ hr {
   margin: 0 0 50px 0;
 }
 
+.title--no-margin {
+  margin: 0;
+}
+
 header {
   background-color: #302e2e;
 }
@@ -285,7 +289,7 @@ header {
 
 .burger-icon:hover,
 .burger-icon:focus {
-  fill: #9961f9;
+  fill: #51c5e8;
   cursor: pointer;
 }
 
@@ -332,7 +336,7 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-menu__close-button:hover .mobile-menu__close-icon, .mobile-menu__close-button:focus .mobile-menu__close-icon {
-  fill: #9961f9;
+  fill: #51c5e8;
   cursor: pointer;
 }
 .mobile-menu__close-icon {
@@ -352,7 +356,7 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-menu__link:hover, .mobile-menu__link:focus {
-  color: #9961f9;
+  color: #51c5e8;
   cursor: pointer;
 }
 .mobile-menu__contact-list {
@@ -372,7 +376,7 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-menu__phone-link:hover, .mobile-menu__phone-link:focus {
-  color: #9961f9;
+  color: #51c5e8;
   cursor: pointer;
 }
 .mobile-menu__email-link {
@@ -398,13 +402,13 @@ header {
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  color: #9961f9;
+  color: #51c5e8;
   transition: 250ms;
   transition-property: color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-menu__social-link:hover, .mobile-menu__social-link:focus {
-  color: #673AB7;
+  color: #39869d;
   cursor: pointer;
 }
 .mobile-menu__social-item {
@@ -479,7 +483,7 @@ header {
 }
 
 .hero__button {
-  background-color: #9961f9;
+  background-color: #51c5e8;
   padding: 10px 20px;
   color: #ffffff;
   border: none;
@@ -493,7 +497,7 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero__button:hover {
-  background-color: #673AB7;
+  background-color: #39869d;
 }
 
 .hero__card {
@@ -760,7 +764,7 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-team__link:hover, .our-team__link:focus {
-  background-color: #9961f9;
+  background-color: #51c5e8;
   color: #ffffff;
 }
 
@@ -769,7 +773,7 @@ header {
 }
 
 .our-team__section {
-  background-color: #f5f4fa;
+  background-color: #f1f2f2;
 }
 
 .our-team__content {
@@ -821,8 +825,8 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customer__logo:hover, .customer__logo:focus {
-  color: #9961f9;
-  border-color: #9961f9;
+  color: #51c5e8;
+  border-color: #51c5e8;
 }
 .customer__logo svg {
   fill: currentColor;
@@ -868,9 +872,19 @@ header {
 .modal {
   position: relative;
   padding: 40px;
-  background-color: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    padding-left: 10em;
+    padding-right: 10em;
+  }
 }
 
 .modal__name {
@@ -901,8 +915,8 @@ header {
   align-items: center;
 }
 .modal__button:hover, .modal__button:focus {
-  border: 1px solid #9961f9;
-  color: #9961f9;
+  border: 1px solid #51c5e8;
+  color: #51c5e8;
   cursor: pointer;
 }
 .modal__button svg {
@@ -928,13 +942,13 @@ header {
 }
 .service__input:hover, .service__input:focus-visible {
   outline: none !important;
-  border-color: #9961f9;
+  border-color: #51c5e8;
   color: #000000;
 }
 .service__input:hover .service__icon, .service__input:focus-visible .service__icon {
   outline: none !important;
-  color: #9961f9;
-  fill: #9961f9;
+  color: #51c5e8;
+  fill: #51c5e8;
 }
 
 .service__label {
@@ -950,7 +964,7 @@ header {
   color: #757575;
 }
 .service__label:hover .service__icon, .service__label:focus .service__icon {
-  fill: #9961f9;
+  fill: #51c5e8;
 }
 
 .service__name {
@@ -959,7 +973,7 @@ header {
 }
 
 .service__button {
-  background-color: #9961f9;
+  background-color: #51c5e8;
   padding: 10px 80px;
   color: #ffffff;
   border: none;
@@ -975,7 +989,7 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .service__button:hover {
-  background-color: #673AB7;
+  background-color: #39869d;
 }
 
 .service__icon {
@@ -1000,7 +1014,7 @@ header {
 }
 .service__textarea:hover, .service__textarea:focus {
   outline: none !important;
-  border-color: #9961f9;
+  border-color: #51c5e8;
 }
 
 .service__checkbox-label {
@@ -1021,8 +1035,8 @@ header {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .service__checkbox-label .service__checkbox:checked + .icon {
-  background-color: #9961f9;
-  border-color: #9961f9;
+  background-color: #51c5e8;
+  border-color: #51c5e8;
   fill: #ffffff;
   outline: none;
   stroke: #ffffff;
@@ -1091,13 +1105,13 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .products__button:hover, .products__button:active {
-  background-color: #9961f9;
+  background-color: #51c5e8;
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .products__button--active {
-  background-color: #9961f9;
+  background-color: #51c5e8;
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -1175,7 +1189,7 @@ header {
   display: block;
   height: 100%;
   top: 100%;
-  background: #9961f9;
+  background: #51c5e8;
   transition: top 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1188,7 +1202,7 @@ header {
   align-items: center;
   height: 0px;
   top: -95%;
-  background: #9961f9;
+  background: #51c5e8;
   transition-property: height;
   transition-duration: 200ms;
   transition-timing-function: linear;
@@ -1283,7 +1297,7 @@ header {
 }
 
 .footer__logo {
-  color: #9961f9;
+  color: #51c5e8;
   font-family: "Raleway";
   font-size: 24px;
   font-weight: 700;
@@ -1357,7 +1371,7 @@ header {
 }
 
 .social__image:hover, .social__image:focus {
-  background-color: #9961f9;
+  background-color: #51c5e8;
   cursor: pointer;
 }
 .social__image svg {
@@ -1420,7 +1434,7 @@ header {
 }
 
 .newsletter__button {
-  background-color: #9961f9;
+  background-color: #51c5e8;
   width: 200px;
   padding: 10px 40px;
   color: #ffffff;
@@ -1441,7 +1455,7 @@ header {
 }
 .newsletter__button:hover, .newsletter__button:focus {
   cursor: pointer;
-  background-color: #673AB7;
+  background-color: #39869d;
 }
 
 .newsletter__input {
