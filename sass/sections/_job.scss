@@ -1,0 +1,35 @@
+// .job{
+
+// }
+.job__card {
+  background-color: $primary-color;
+  line-height: 16px;
+  padding: 63px 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  color: $secondary-color;
+  fill: $secondary-color;
+}
+.job__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 18px;
+}
+.job__subheading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 16px;
+}
+.job__point {
+  list-style-type: disc;
+  margin-left: 1em;
+}
+.job__description {
+  font-weight: 400;
+  font-size: 14px;
+}
