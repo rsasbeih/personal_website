@@ -1,7 +1,7 @@
 @import "../utils/vars.scss";
 @import "../utils/breakpoints";
 .hero {
-  background-image: url("../../images/pexels-tatiana-10320872.jpg");
+  background-image: url(https://images.pexels.com/photos/10320872/pexels-photo-10320872.jpeg);
   background-size: cover;
   background-position: center;
   padding: 150px 0;
@@ -33,7 +33,7 @@
     font-size: 44px;
   }
 }
-.hero__description{
+.hero__description {
   margin: 0 0 10px 0;
   color: $secondary-color;
   // font-family: "Roboto";
