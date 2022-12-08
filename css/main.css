@@ -1117,14 +1117,24 @@ header {
 }
 
 .job__card {
-  background-color: #51c5e8;
   line-height: 16px;
   padding: 63px 24px;
   line-height: 28px;
   letter-spacing: 0.03em;
   border-radius: 4px;
-  color: #ffffff;
   fill: #ffffff;
+  position: relative;
+}
+
+.job__card:not(:last-child)::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  border-radius: 2px;
+  background-color: #e8e8e8;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
 }
 
 .job__heading {
@@ -1133,6 +1143,7 @@ header {
   justify-content: space-between;
   font-weight: 400;
   font-size: 18px;
+  font-weight: bold;
 }
 
 .job__subheading {
@@ -1141,6 +1152,8 @@ header {
   justify-content: space-between;
   font-weight: 400;
   font-size: 16px;
+  font-style: italic;
+  color: rgba(47, 48, 58, 0.8);
 }
 
 .job__point {
@@ -1150,7 +1163,19 @@ header {
 
 .job__description {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
+}
+
+.job__website {
+  padding-top: 1em;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: underline;
+  color: #51c5e8;
+}
+
+.job__link:visited {
+  color: #51c5e8;
 }
 
 .projects {
