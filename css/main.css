@@ -1174,8 +1174,19 @@ header {
   color: #51c5e8;
 }
 
+.job__link {
+  color: #51c5e8;
+  transition: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .job__link:visited {
   color: #51c5e8;
+}
+
+.job__link:hover {
+  color: #39869d;
 }
 
 .projects {

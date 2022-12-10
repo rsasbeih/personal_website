@@ -54,6 +54,15 @@
   text-decoration: underline;
   color: $primary-color;
 }
+.job__link {
+  color: $primary-color;
+  transition: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .job__link:visited {
   color: $primary-color;
+}
+.job__link:hover {
+  color: $button-hover-color;
 }
